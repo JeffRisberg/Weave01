@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Users/jeff/Documents/DevPython/Weave01/sample.py", line 22, in <module>
+    acc = 1 - 2 ** -epoch - random.random() / epoch - offset
+ZeroDivisionError: float division by zero
