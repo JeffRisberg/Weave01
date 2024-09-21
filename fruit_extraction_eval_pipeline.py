@@ -29,7 +29,7 @@ class ExtractFruitsModel(weave.Model):
         return parsed
 
 # We call init to begin capturing data in the project, intro-example.
-weave.init(PROJECT)
+weave.init("Fruit")
 
 # We create our model with our system prompt.
 model = ExtractFruitsModel(name='gpt4',
@@ -64,6 +64,6 @@ evaluation = weave.Evaluation(
     name='fruit_eval',
     dataset=examples, scorers=[MultiTaskBinaryClassificationF1(class_names=["fruit", "color", "flavor"]), fruit_name_score],
 )
-# print(asyncio.run(evaluation.evaluate(model)))
-# if you're in a Jupyter Notebook, run:
-print(evaluation.evaluate(model))
+
+print(asyncio.run(evaluation.evaluate(model)))
+

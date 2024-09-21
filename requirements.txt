@@ -1,5 +1,5 @@
-pyarrow==14.0.0
-weave==0.31.0
+pyarrow==14.0.1
+weave==0.51.8
 
 
 
