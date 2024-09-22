@@ -2,3 +2,5 @@ MNIST
 .ipynb_checkpoints
 wandb
 .idea/workspace.xml
+venv
+
