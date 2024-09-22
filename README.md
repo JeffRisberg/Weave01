@@ -1,11 +1,15 @@
 ```
-virtualenv -p python3.10 venv 
-. ./venv/bin/activate
+rm -rf venv
+virtualenv -p python3.11 venv 
+. venv/bin/activate
+pip install --upgrade pip
+
+pip install -r requirements.txt
 ```
 
-``````
-pip install weave
-```
+set openAI_api
+
+weave login
 
 ```
 . ./venv/bin/deactivate
