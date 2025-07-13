@@ -1,5 +1,4 @@
-pyarrow==14.0.1
-weave==0.51.8
-
-
-
+pyarrow==20.0.0
+weave==0.51.56
+openai==1.95.1
+numpy==2.3.1

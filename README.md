@@ -1,16 +1,30 @@
+# Weave01
+
 ```
 rm -rf venv
-virtualenv -p python3.11 venv 
+virtualenv -p python3.12 venv 
 . venv/bin/activate
 pip install --upgrade pip
 
 pip install -r requirements.txt
 ```
 
-set openAI_api
-
-weave login
+# Set openAI_api key
 
 ```
-. ./venv/bin/deactivate
+export OPENAI_API_KEY=
+```
+
+# Login to Weave at https://wandb.ai
+
+# run applications such as 
+
+```
+python rag_example.py
+```
+
+# Afterwards
+
+```
+deactivate
 ```
